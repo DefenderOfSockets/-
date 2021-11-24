@@ -11,8 +11,6 @@
 ГОСТ 24705-2004 - Резьба метрическая. Основные размеры
 ГОСТ 10549-80 - Выход резьбы
 
-<h4>Скомпилированный .exe файл: https://drive.google.com/file/d/1xl8Ua3w50qMR2YIbJteLvX1yrtPbFts-/view?usp=sharing</h4>
-
 По поводу предложений и багов писать сюда: lopukhov.evgeniy.o@gmail.com
 
 ![alt text](pic/Screenshot.png "Окно программы")
