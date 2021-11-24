@@ -13,6 +13,6 @@
 
 <h4>Скомпилированный .exe файл: https://drive.google.com/file/d/1xl8Ua3w50qMR2YIbJteLvX1yrtPbFts-/view?usp=sharing</h4>
 
-По поводу предложений и багов писать сюда: lopukho.evgeniy.o@gmail.com
+По поводу предложений и багов писать сюда: lopukhov.evgeniy.o@gmail.com
 
 ![alt text](pic/Screenshot.png "Окно программы")
