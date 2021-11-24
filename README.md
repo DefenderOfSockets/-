@@ -17,4 +17,4 @@
 
 По поводу предложений и багов писать сюда: lopukhov.evgeniy.o@gmail.com
 
-![alt text](pic/Screenshot.png "Окно программы")
+![alt text](pic/Screenshot1.png "Окно программы")
