@@ -13,4 +13,4 @@
 
 <h4>Скомпилированный .exe файл:</h4>
 
-![alt text](pic/screenshot.png "Окно программы")
+![alt text](pic/Screenshot.png "Окно программы")
