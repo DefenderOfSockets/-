@@ -1,15 +1,24 @@
-import pandas as pd
+import sys
+from os import path
+
+from pandas import read_csv
+
+
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    base_path = getattr(sys, '_MEIPASS', path.dirname(path.abspath(__file__)))
+    return path.join(base_path, relative_path)
 
 
 class OpenData:
     def __init__(self):
-        self.threadDataFile = 'data/thread.csv'
-        self.threadDataFileShaft = 'data/threadShaft.csv'
-        self.threadDataFileHole = 'data/threadHole.csv'
+        self.threadDataFile = resource_path('thread.csv')
+        self.threadDataFileShaft = resource_path('threadShaft.csv')
+        self.threadDataFileHole = resource_path('threadHole.csv')
 
-        self.df_thread = pd.read_csv(self.threadDataFile, header=0)
-        self.df_thread_shaft = pd.read_csv(self.threadDataFileShaft, header=0)
-        self.df_thread_hole = pd.read_csv(self.threadDataFileHole, header=0)
+        self.df_thread = read_csv(self.threadDataFile, header=0)
+        self.df_thread_shaft = read_csv(self.threadDataFileShaft, header=0)
+        self.df_thread_hole = read_csv(self.threadDataFileHole, header=0)
 
     def getDiameter(self):
         return [str(int(x)) if x - int(x) == 0 else str(x) for x in self.df_thread['dD']]

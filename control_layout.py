@@ -1,4 +1,4 @@
-from PyQt5 import QtCore
+from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QLabel, QVBoxLayout, QFrame, QComboBox, QLineEdit, QCompleter
 
 from spreadsheet_widget import SpreadsheetWidget
@@ -45,13 +45,13 @@ class ControlLayout(QVBoxLayout):
         self.line.setFrameShadow(QFrame.Sunken)
 
         self.l_d = QLabel('Выберите номинальный диаметр резьбы:')
-        self.l_d.setAlignment(QtCore.Qt.AlignCenter)
+        self.l_d.setAlignment(Qt.AlignCenter)
 
         self.l_p = QLabel('Выберите шаг резьбы:')
-        self.l_p.setAlignment(QtCore.Qt.AlignCenter)
+        self.l_p.setAlignment(Qt.AlignCenter)
 
         self.l_name = QLabel('Обозначение резьбы:')
-        self.l_name.setAlignment(QtCore.Qt.AlignCenter)
+        self.l_name.setAlignment(Qt.AlignCenter)
 
     def initUI(self):
         self.combo_d = QComboBox()
@@ -67,7 +67,7 @@ class ControlLayout(QVBoxLayout):
         self.line_name_for_copy = QLineEdit()
         self.line_name_for_copy.setFixedSize(388, 32)
         self.line_name_for_copy.setReadOnly(True)
-        self.line_name_for_copy.setAlignment(QtCore.Qt.AlignCenter)
+        self.line_name_for_copy.setAlignment(Qt.AlignCenter)
 
     def chooseDiameter(self):
         self.combo_p.clear()

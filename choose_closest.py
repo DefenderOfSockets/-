@@ -1,4 +1,4 @@
-from PyQt5 import QtCore
+from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QVBoxLayout, QHBoxLayout, QLabel
 
 
@@ -18,11 +18,11 @@ class ChooseClosest(QVBoxLayout):
         self.l_cl2 = QLabel('Ближайший диаметр по 2 ряду: ')
 
         self.l_row_res = QLabel()
-        self.l_row_res.setAlignment(QtCore.Qt.AlignCenter)
+        self.l_row_res.setAlignment(Qt.AlignCenter)
         self.l_cl1_res = QLabel()
-        self.l_cl1_res.setAlignment(QtCore.Qt.AlignCenter)
+        self.l_cl1_res.setAlignment(Qt.AlignCenter)
         self.l_cl2_res = QLabel()
-        self.l_cl2_res.setAlignment(QtCore.Qt.AlignCenter)
+        self.l_cl2_res.setAlignment(Qt.AlignCenter)
 
     def initRows(self):
         self.row_first = QHBoxLayout()

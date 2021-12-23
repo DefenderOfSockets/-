@@ -1,8 +1,8 @@
-from PyQt5 import QtCore
+from PyQt5.QtCore import QObject, pyqtSignal
 
 
-class SignalChanged(QtCore.QObject):
-    sigchr = QtCore.pyqtSignal(list)
+class SignalChanged(QObject):
+    sigchr = pyqtSignal(list)
 
     def __init__(self):
-        QtCore.QObject.__init__(self)
+        QObject.__init__(self)
